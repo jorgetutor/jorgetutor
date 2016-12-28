@@ -1,0 +1,186 @@
+@import 'compass/css3';
+
+$color_base : #333;
+$color1 : #555;
+$color_featured : #3b94d9;
+
+$font : 'Slabo 27px', sans-serif;
+
+body {
+  color: #999;
+  padding:50px 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+
+  background: url("../images/bg.jpg") white;
+
+}
+
+img {
+  max-width: 100%;
+}
+
+.shadow {
+  @include box-shadow(#000 5px 5px 5px);
+}
+
+h1 {
+  font-family: $font;
+  font-size: 4em;
+  color: $color1;
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
+}
+
+h2 {
+  font-family: $font;
+  font-size: 2em;
+  color: $color_featured;
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
+}
+
+h3 {
+  font-family: 'Cinzel', sans-serif;
+  text-shadow: 2px 0 #000;
+  font-size: 2em;
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
+  color: $color1;
+}
+
+a {
+  text-decoration: none;
+  color: $color1;
+
+  &.btn {
+    background: #776F2E;
+    padding: 1em 2em;
+    margin: 2em;
+    @include box-shadow(#000 5px 5px 5px);
+    border-bottom: 5px solid darken($color1, 10%)
+  }
+}
+
+.name {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.download {
+  padding: 2em;
+}
+
+.element-hide {
+  display: none;
+}
+
+.slogan {
+  font-family: $font;
+  font-size: 3em;
+  color:darken($color_base, 50%);
+  padding: 0.5em;
+}
+
+ul {
+  max-width: 960px;
+  margin:0 auto 1em;
+}
+
+ul.social {
+  padding: 0;
+
+  li {
+      display: inline-block;
+      padding: 1em;
+
+    a {
+
+      color: #333;
+      &:before {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 2.5em;
+        display: block;
+        color:white;
+        background-color: #333;
+      }
+
+    }
+  }
+}
+
+ul.skills {
+  padding: 0;
+
+  li {
+    display: inline-block;
+    padding: 1em;
+  }
+}
+
+p {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+hr {
+  width: 10%;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $color_featured;
+  margin: 1em auto;
+  padding: 0;
+}
+
+section {
+  padding: 5px;
+  padding: 1em 0;
+
+  &.projects{
+    background: white;
+    padding: 3em;
+  }
+}
+
+ul.col-3 {
+  li {
+    width: 30%;
+    display: inline-block;
+  }
+}
+
+ul.unformated {
+  padding: 0;
+  li {
+    list-style: none;
+    padding: 0.5em;
+  }
+}
+
+ul.projects {
+  img {
+    max-height: 100px;
+  }
+}
+
+ul.skills {
+  li {
+    &:before {
+      content: '#';
+    }
+  }
+}
+
+
+img.logo {
+  border-radius: 50%;
+  max-width: 120px;
+  border: 5px solid white;
+}

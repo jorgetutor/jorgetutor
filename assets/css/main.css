@@ -1,0 +1,193 @@
+/* line 9, ../compass/sass/main.scss */
+body {
+  color: #999;
+  padding: 50px 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  background: url("../images/bg.jpg") white;
+}
+
+/* line 21, ../compass/sass/main.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 25, ../compass/sass/main.scss */
+.shadow {
+  -moz-box-shadow: #000 5px 5px 5px;
+  -webkit-box-shadow: #000 5px 5px 5px;
+  box-shadow: #000 5px 5px 5px;
+}
+
+/* line 29, ../compass/sass/main.scss */
+h1 {
+  font-family: "Slabo 27px", sans-serif;
+  font-size: 4em;
+  color: #555;
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
+}
+
+/* line 37, ../compass/sass/main.scss */
+h2 {
+  font-family: "Slabo 27px", sans-serif;
+  font-size: 2em;
+  color: #3b94d9;
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
+}
+
+/* line 45, ../compass/sass/main.scss */
+h3 {
+  font-family: 'Cinzel', sans-serif;
+  text-shadow: 2px 0 #000;
+  font-size: 2em;
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
+  color: #555;
+}
+
+/* line 54, ../compass/sass/main.scss */
+a {
+  text-decoration: none;
+  color: #555;
+}
+/* line 58, ../compass/sass/main.scss */
+a.btn {
+  background: #776F2E;
+  padding: 1em 2em;
+  margin: 2em;
+  -moz-box-shadow: #000 5px 5px 5px;
+  -webkit-box-shadow: #000 5px 5px 5px;
+  box-shadow: #000 5px 5px 5px;
+  border-bottom: 5px solid #3c3c3c;
+}
+
+/* line 67, ../compass/sass/main.scss */
+.name {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 73, ../compass/sass/main.scss */
+.download {
+  padding: 2em;
+}
+
+/* line 77, ../compass/sass/main.scss */
+.element-hide {
+  display: none;
+}
+
+/* line 81, ../compass/sass/main.scss */
+.slogan {
+  font-family: "Slabo 27px", sans-serif;
+  font-size: 3em;
+  color: black;
+  padding: 0.5em;
+}
+
+/* line 88, ../compass/sass/main.scss */
+ul {
+  max-width: 960px;
+  margin: 0 auto 1em;
+}
+
+/* line 93, ../compass/sass/main.scss */
+ul.social {
+  padding: 0;
+}
+/* line 96, ../compass/sass/main.scss */
+ul.social li {
+  display: inline-block;
+  padding: 1em;
+}
+/* line 100, ../compass/sass/main.scss */
+ul.social li a {
+  color: #333;
+}
+/* line 103, ../compass/sass/main.scss */
+ul.social li a:before {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 2.5em;
+  display: block;
+  color: white;
+  background-color: #333;
+}
+
+/* line 118, ../compass/sass/main.scss */
+ul.skills {
+  padding: 0;
+}
+/* line 121, ../compass/sass/main.scss */
+ul.skills li {
+  display: inline-block;
+  padding: 1em;
+}
+
+/* line 127, ../compass/sass/main.scss */
+p {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* line 132, ../compass/sass/main.scss */
+hr {
+  width: 10%;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #3b94d9;
+  margin: 1em auto;
+  padding: 0;
+}
+
+/* line 142, ../compass/sass/main.scss */
+section {
+  padding: 5px;
+  padding: 1em 0;
+}
+/* line 146, ../compass/sass/main.scss */
+section.projects {
+  background: white;
+  padding: 3em;
+}
+
+/* line 153, ../compass/sass/main.scss */
+ul.col-3 li {
+  width: 30%;
+  display: inline-block;
+}
+
+/* line 159, ../compass/sass/main.scss */
+ul.unformated {
+  padding: 0;
+}
+/* line 161, ../compass/sass/main.scss */
+ul.unformated li {
+  list-style: none;
+  padding: 0.5em;
+}
+
+/* line 168, ../compass/sass/main.scss */
+ul.projects img {
+  max-height: 100px;
+}
+
+/* line 175, ../compass/sass/main.scss */
+ul.skills li:before {
+  content: '#';
+}
+
+/* line 182, ../compass/sass/main.scss */
+img.logo {
+  border-radius: 50%;
+  max-width: 120px;
+  border: 5px solid white;
+}
