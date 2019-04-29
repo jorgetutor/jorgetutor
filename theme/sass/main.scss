@@ -1,8 +1,6 @@
-@import 'compass/css3';
-
 $color_base : #333;
 $color1 : #555;
-$color_featured : #3b94d9;
+$color_featured : #892332;
 
 $font : 'Slabo 27px', sans-serif;
 
@@ -23,7 +21,7 @@ img {
 }
 
 .shadow {
-  @include box-shadow(#000 5px 5px 5px);
+  box-shadow: #000 5px 5px 5px;
 }
 
 h1 {
@@ -55,11 +53,15 @@ a {
   text-decoration: none;
   color: $color1;
 
+  &:hover {
+    color: $color_featured;
+  }
+
   &.btn {
     background: #776F2E;
     padding: 1em 2em;
     margin: 2em;
-    @include box-shadow(#000 5px 5px 5px);
+    box-shadow: #000 5px 5px 5px;
     border-bottom: 5px solid darken($color1, 10%)
   }
 }
@@ -81,7 +83,7 @@ a {
 .slogan {
   font-family: $font;
   font-size: 3em;
-  color:darken($color_base, 50%);
+  color: $color_featured;
   padding: 0.5em;
 }
 
@@ -110,6 +112,11 @@ ul.social {
         color:white;
         background-color: #333;
       }
+      &:hover:before {
+        background-color: lighten($color_featured, 15%);
+      }
+
+
 
     }
   }
