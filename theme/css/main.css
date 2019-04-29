@@ -1,6 +1,9 @@
+* {
+  box-sizing: border-box; }
+
 body {
   color: #999;
-  padding: 50px 0;
+  padding: 50px 0 0;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   text-align: center;
@@ -64,28 +67,30 @@ a {
   color: #892332;
   padding: 0.5em; }
 
+.fa, .fas {
+  font-weight: 100 !important; }
+
 ul {
   max-width: 960px;
   margin: 0 auto 1em; }
-
-ul.social {
-  padding: 0; }
-  ul.social li {
-    display: inline-block;
-    padding: 1em; }
-    ul.social li a {
-      color: #333; }
-      ul.social li a:before {
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        line-height: 60px;
-        font-size: 2.5em;
-        display: block;
-        color: white;
-        background-color: #333; }
-      ul.social li a:hover:before {
-        background-color: #c63348; }
+  ul.social {
+    padding: 0; }
+    ul.social li {
+      display: inline-block;
+      padding: 1em; }
+      ul.social li a {
+        color: #333; }
+        ul.social li a:before {
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          line-height: 60px;
+          font-size: 2.5em;
+          display: block;
+          color: white;
+          background-color: #333; }
+        ul.social li a:hover:before {
+          background-color: #c63348; }
 
 ul.skills {
   padding: 0; }
@@ -106,25 +111,51 @@ hr {
   margin: 1em auto;
   padding: 0; }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap; }
+  .cards .card {
+    flex: 1 0 21%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+    min-width: 200px; }
+
 section {
   padding: 5px;
   padding: 1em 0; }
-  section.projects {
+  section.parent {
+    display: flex;
+    flex-wrap: wrap;
     background: white;
-    padding: 3em; }
-
-ul.col-3 li {
-  width: 30%;
-  display: inline-block; }
+    padding: 0em; }
+    section.parent .child {
+      flex: 1 0 21%;
+      border-right: 1px  solid #eee;
+      border-bottom: 1px  solid #eee;
+      min-width: 300px; }
+      section.parent .child p {
+        padding: 10px; }
+      section.parent .child.initiatives {
+        min-width: 100%; }
+        section.parent .child.initiatives .image {
+          min-width: 100%; }
+        section.parent .child.initiatives a {
+          display: inline-block;
+          text-align: center;
+          width: 100%; }
+        section.parent .child.initiatives img {
+          max-height: 160px; }
 
 ul.unformated {
   padding: 0; }
   ul.unformated li {
-    list-style: none;
-    padding: 0.5em; }
+    list-style: none; }
 
-ul.projects img {
-  max-height: 100px; }
+ul.list li {
+  padding: 0.5em;
+  border-bottom: 1px solid #efefef; }
 
 ul.skills li:before {
   content: '#'; }
@@ -133,3 +164,6 @@ img.logo {
   border-radius: 50%;
   max-width: 120px;
   border: 5px solid white; }
+
+img.circle {
+  border-radius: 50%; }
