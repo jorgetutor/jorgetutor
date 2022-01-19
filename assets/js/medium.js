@@ -24,14 +24,16 @@ const getLatestTextsList = async () => {
         const title = post.title;
         const link = post.link;
         const thumbnail = post.thumbnail;
-        const pubDate = post.pubDate;
+        const pubDate = new Date(post.pubDate);
+        const pubDateString = pubDate.toLocaleString('en-us',{month:'short', year:'numeric'});
         const author = post.author;
         const content = post.content;
         const categories = post.categories.join(', ');
 
         const newItem = document.createElement('li');
-        newItem.innerHTML = `<a href="${link}"><strong>${title}</strong></a>`;
-        newItem.innerHTML += ` <br />${pubDate} - <em> ${categories}</em>`; 
+        newItem.innerHTML += ` ${pubDateString} <br />`;
+        newItem.innerHTML += `<a href="${link}">${title}</a>`;
+        newItem.innerHTML += `<br /><em> ${categories}</em>`; 
         //newItem.innerHTML += `${content}`; 
 
         $textList.appendChild(newItem)

@@ -1,10 +1,12 @@
-.VueCarousel h2 {
-  font-size: 18px;
-}
-.VueCarousel .author {
-  display: none;
-}
-
 .text-center {
   text-align: center;
+}
+
+#medium-posts a {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+h2, h3 {
+  font-weight: bolder;
 }
