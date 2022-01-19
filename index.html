@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Jorge Tutor | Agile Coach Knight</title>
+		<title>Jorge Tutor | Agile Program Manager</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,14 +19,13 @@
 			<header id="header">
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/jorgetutor-square.jpg" alt="" /></a>
-					<h1>Hi! I am <strong>Jorge Tutor</strong>, <br />an Agile Coach Knight.</h1>
+					<h1>Hi! I am <strong>Jorge Tutor</strong>, <br />an Agile Program Manager.</h1>
 				</div>
 			</header>
 
 		<!-- Main -->
 			<div id="main">
 
-				<!-- One -->
 					<section id="one">
 						<header class="major">
 							<h2>Agility, Innovation, and Leadership</h2>
@@ -36,8 +35,13 @@
 						<p>I speak from my own experience as an employee, as a teammate, as an entrepreneur... <strong>as a person</strong>. I read, experiment, learn, rehearse, make mistakes, retest, fail early, analyze and start again! Little by little, I am developing a method that I share through keynotes, courses, and <a href="https://medium.com/@jorgetutor">my blog</a>.</p>
 					</section>
 
+					<section id="three" class="medium">
+						<h2>Recent Publications</h2>
+						<ul id="medium-posts">
 
-				<!-- Two -->
+						</ul>
+					</section>
+
 					<section id="two">
 						<h2>Featured Work</h2>
 
@@ -53,29 +57,14 @@
 								<p><a href="https://gruposmadrid.com">Madrid Music Bands site</a>.</p>
 							</article>
 						</div>
-				</section>
+					</section>
 
-				<!-- Three -->
 					<section id="four" class="text-center">
 						<h2>Get In Touch</h2>
 						<p>Feel free to find me in any social media network or send me an email if you want to work/collaborate with me.</p>
 						<p>
 							<a href="#" class="email-obfuscator button">Contact me</a>
 						</p>
-					</section>
-
-
-				<!-- Three -->
-					<section id="three">
-						<h2>Recent Publications</h2>
-						<div id="retainable-rss-embed"
-						data-rss="https://medium.com/feed/@jorgetutor"
-						data-maxcols="3"
-						data-layout="slider"
-						data-poststyle="external"
-						data-buttonclass="btn btn-primary"
-						data-offset="3"></div>
-						<script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
 					</section>
 
 			</div>
@@ -108,9 +97,9 @@
 			{
 				coded = "2UuzPRHRUu@z9Stc.bU9"
 				key = "RJMde9sUgcGFHXQIaY2pxyi7PZWvzbqBhVr4S6L8f0tOD3TmAokl1NuEnCKwj5"
-				shift=coded.length
-				link=""
-				for (i=0; i<coded.length; i++) {
+				shift = coded.length
+				link = ""
+				for (let i = 0; i < coded.length; i++) {
 					if (key.indexOf(coded.charAt(i))==-1) {
 						ltr = coded.charAt(i)
 						link += (ltr)
@@ -123,10 +112,7 @@
 				var elements = document.getElementsByClassName("email-obfuscator");
 				for (var i = 0; i < elements.length; i++) {
 					elements[i].href = 'mailto:' + link;
-
 				}
-
-
 			}
 			//-->
 			</script>
@@ -136,6 +122,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/medium.js"></script>
 
 	</body>
 </html>
