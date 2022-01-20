@@ -31,13 +31,13 @@ const getLatestTextsList = async () => {
         const categories = post.categories.join(', ');
 
         const newItem = document.createElement('li');
-        newItem.innerHTML += ` ${pubDateString} <br />`;
-        newItem.innerHTML += `<a href="${link}">${title}</a>`;
-        newItem.innerHTML += `<br /><em> ${categories}</em>`; 
+        newItem.classList.add('list-group-item','p-3');
+        newItem.innerHTML += `<div class="text-muted">${pubDateString}</div>`;
+        newItem.innerHTML += `<div><a href="${link}" class="fw-bold text-black fs-4 text-decoration-none">${title}</a></div>`;
+        newItem.innerHTML += `<div class="text-muted"><em> ${categories}</em></div>`; 
         //newItem.innerHTML += `${content}`; 
 
-        $textList.appendChild(newItem)
-
+        $textList.appendChild(newItem);
     }
 };
 

@@ -1,0 +1,9 @@
+$body-bg: #EFEFEF;
+$primary: #8844bb;
+$secondary: rgb(96, 26, 153);
+
+$font-family-base: 'Martel Sans', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;400;800&display=swap');
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./custom.scss";

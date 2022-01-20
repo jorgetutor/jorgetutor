@@ -1,0 +1,11 @@
+a.anchor {
+  display: block;
+  position: relative;
+  top: -75px;
+  visibility: hidden;
+}
+
+.list-group-item {
+  background-color: none;
+}
+/*# sourceMappingURL=custom.css.map */
