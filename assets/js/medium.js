@@ -31,7 +31,7 @@ const getLatestTextsList = async () => {
         const categories = post.categories.join(', ');
 
         const newItem = document.createElement('li');
-        newItem.classList.add('list-group-item','p-3');
+        newItem.classList.add('list-group-item', 'p-0', 'pt-3', 'pb-3');
         newItem.innerHTML += `<div class="text-muted">${pubDateString}</div>`;
         newItem.innerHTML += `<div><a href="${link}" class="fw-bold text-black fs-4 text-decoration-none">${title}</a></div>`;
         newItem.innerHTML += `<div class="text-muted"><em> ${categories}</em></div>`; 
